@@ -1,0 +1,29 @@
+@mixin m-flex($a: stretch, $j: space-between) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin m-inner($w: 90%, $mw: 1000px) {
+    width: $w;
+    max-width: $mw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$breakpoints: (
+    "tablet": "(640px<=width)",
+    "desktop": "(800px<=width)",
+    "full": "(1200px<=width)",
+    ) !default;
+
+@mixin m-query($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@function f-rem($value) {
+    @return ($value/16)+rem;
+}

@@ -1,0 +1,9 @@
+@use '../global/' as *;
+
+body {
+    background-color: $color-bg;
+    color: $color-text;
+    font-size: f-rem(16);
+    font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+    line-height: 1.5;
+}
