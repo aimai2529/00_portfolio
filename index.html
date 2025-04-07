@@ -6,59 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio feat.AIRI FUJITA</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./JavaScript/js-header.js" defer></script>
 </head>
 
 <body>
-    <header class="l-header">
-        <ul class="l-header__menu">
-            <a href="index.html">
-                <li class="l-header__link u-c-bla">HOME</li>
-            </a>
-            <a href="about.html">
-                <li class="l-header__link">ABOUT ME</li>
-            </a>
-            <a href="work_list.html">
-                <li class="l-header__link">WORKS</li>
-            </a>
-            <a href="#contact">
-                <li class="l-header__link">CONTACT</li>
-            </a>
-        </ul>
+    <header class="l-header js-header is-active">
+        <div class="l-header__inner">
+            <ul class="l-header__menu">
+                <a href="index.html">
+                    <li class="l-header__link u-c-bla">HOME</li>
+                </a>
+                <a href="about.html">
+                    <li class="l-header__link">ABOUT ME</li>
+                </a>
+                <a href="work_list.html">
+                    <li class="l-header__link">WORKS</li>
+                </a>
+                <a href="#contact">
+                    <li class="l-header__link">CONTACT</li>
+                </a>
+            </ul>
+            <img src="./images/CD_color.PNG" alt="" class="l-header__bg">
+        </div>
     </header>
 
     <main class="l-main">
         <section class="p-top-firstview">
-            <h1 class="p-top-firstview__title">
-                ポートフォリオ<br>
-                feat.ふじたあいり
-            </h1>
+            <img src="./images/logo_1.svg" alt="PortfolioSite feat.AIRI FUJITA" class="p-top-firstview__logo">
         </section>
 
         <section class="p-top-about">
             <div class="p-top-about__favorite p-player">
                 <img src="./images/baritone.JPG" alt="バリトンサックスでソロを吹く藤田愛梨" class="p-player__img">
-                <p class="p-player__title">
-                    吹奏楽withバリトンサックス
-                </p>
-                <p class="p-player__tag">
-                    趣味
-                </p>
-                <div class="p-player__bar">
-                    <span class="p-player__sec js-sec is-active"></span>
-                    <span class="p-player__sec"></span>
-                    <span class="p-player__sec"></span>
-                    <span class="p-player__sec"></span>
-                </div>
-                <div class="p-player__operation">
-                    <button class="p-player__button">
-                        <img src="./images/SkipBack.png" alt="前に戻る">
-                    </button>
-                    <button class="p-player__button">
-                        <img src="./images/Pause.png" alt="一時停止">
-                    </button>
-                    <button class="p-player__button">
-                        <img src="./images/SkipForward.png" alt="次に進む">
-                    </button>
+                <div class="p-player__text">
+                    <p class="p-player__title">
+                        吹奏楽withバリトンサックス
+                    </p>
+                    <p class="p-player__tag">
+                        趣味
+                    </p>
+                    <div class="p-player__bar">
+                        <span class="p-player__sec js-sec is-active"></span>
+                        <span class="p-player__sec"></span>
+                        <span class="p-player__sec"></span>
+                        <span class="p-player__sec"></span>
+                    </div>
+                    <div class="p-player__operation">
+                        <button class="p-player__button">
+                            <img src="./images/SkipBack.png" alt="前に戻る">
+                        </button>
+                        <button class="p-player__button">
+                            <img src="./images/Pause.png" alt="一時停止">
+                        </button>
+                        <button class="p-player__button">
+                            <img src="./images/SkipForward.png" alt="次に進む">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="p-top-about__intro">

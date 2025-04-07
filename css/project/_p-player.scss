@@ -1,0 +1,15 @@
+@use '../global' as *;
+
+.p-player {
+    &__img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 40px;
+    }
+
+    &__text {
+        margin: 60px auto 0;
+        width: 90%;
+    }
+}

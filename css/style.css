@@ -106,4 +106,131 @@ body {
   font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
   line-height: 1.5;
 }
+
+.l-header {
+  max-width: 900px;
+  width: 80%;
+  min-width: 400px;
+  aspect-ratio: 1/1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-80%);
+  transition: 0.5s;
+}
+.l-header.is-active {
+  transform: translateX(0);
+}
+.l-header__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.l-header__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: "rotate" 90s linear infinite;
+          animation: "rotate" 90s linear infinite;
+  transition: 0.3s;
+  filter: grayscale(1);
+}
+.l-header__bg:hover {
+  filter: grayscale(0);
+}
+.l-header__menu {
+  position: relative;
+  z-index: 99;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+.l-header__link {
+  text-align: right;
+  background-color: #5c5c5c;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.l-header__link.u-c-bla {
+  background-color: #f0f0f0;
+}
+.l-header a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.p-top-firstview {
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  margin-bottom: 450px;
+}
+.p-top-firstview__logo {
+  position: relative;
+  z-index: 999;
+  margin-top: auto;
+  margin-left: auto;
+  padding: 20px 30px;
+  width: 60%;
+  background-color: #5c5c5c;
+}
+
+.p-top-about {
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+}
+
+.p-player__img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+.p-player__text {
+  margin: 60px auto 0;
+  width: 90%;
+}
+
+.u-c-bla {
+  color: #0a0a0a;
+}
 /*# sourceMappingURL=style.css.map */

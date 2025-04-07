@@ -1,0 +1,78 @@
+@use '../global' as *;
+
+.l-header {
+    max-width: 900px;
+    width: 80%;
+    min-width: 400px;
+    aspect-ratio: 1/1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-80%);
+    transition: .5s;
+
+    &.is-active {
+        transform: translateX(0);
+    }
+
+    &__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-right: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: 'rotate' 90s linear infinite;
+        transition: .3s;
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+
+    &__menu {
+        position: relative;
+        z-index: 99;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+
+    &__link {
+        text-align: right;
+        background-color: $color-main-with-text;
+        padding: 5px 15px;
+        margin-bottom: 10px;
+        width: fit-content;
+        font-size: f-rem(24);
+        font-weight: bold;
+
+        &.u-c-bla {
+            background-color: $color-text;
+        }
+    }
+
+    a {
+        display: block;
+        width: fit-content;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
