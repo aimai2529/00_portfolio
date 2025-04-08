@@ -1,0 +1,29 @@
+@use '../global' as *;
+
+.p-work-head {
+    @include m-inner;
+    margin-top: 180px;
+    margin-bottom: 60px;
+
+    &__title {
+        font-size: f-rem(36);
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    &__tag {
+        margin-bottom: 60px;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    &__about {
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}

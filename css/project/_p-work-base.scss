@@ -1,0 +1,16 @@
+@use '../global' as *;
+
+.p-work-base {
+    @include m-inner;
+
+    &__title {
+        font-size: f-rem(20);
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+    }
+}

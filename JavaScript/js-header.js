@@ -4,16 +4,17 @@ const bodyHeight = document.body.clientHeight // bodyの高さを取得
 const windowHeight = window.innerHeight // windowの高さを取得
 const bottomPoint = bodyHeight - windowHeight // ページ最下部までスクロールしたかを判定するための位置を計算
 
-
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 150 && header.classList.contains("is-active")) {
-        header.classList.remove("is-active");
-        btn.classList.add("is-close");
-    } else if (window.scrollY < 150 && !header.classList.contains("is-active")) {
-        header.classList.remove("is-appear");
-        header.classList.add("is-active");
-        btn.classList.remove("is-close");
-        btn.classList.remove("is-open");
+    if (this.location.pathname === '/index.html') {
+        if (window.scrollY > 150 && header.classList.contains("is-active")) {
+            header.classList.remove("is-active");
+            btn.classList.add("is-close");
+        } else if (window.scrollY < 150 && !header.classList.contains("is-active")) {
+            header.classList.remove("is-appear");
+            header.classList.add("is-active");
+            btn.classList.remove("is-close");
+            btn.classList.remove("is-open");
+        }
     }
 
     if (window.scrollY >= bottomPoint && !header.classList.contains("is-bottom")) {
@@ -21,9 +22,11 @@ window.addEventListener("scroll", () => {
         header.classList.add("is-bottom");
         btn.classList.remove("is-close");
         btn.classList.remove("is-open");
+        console.log('sita', bottomPoint, bodyHeight, windowHeight)
     } else if (window.scrollY < bottomPoint && header.classList.contains("is-bottom")) {
         header.classList.remove("is-bottom");
         btn.classList.add("is-close");
+        console.log('ue')
     }
 });
 
