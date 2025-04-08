@@ -7,23 +7,27 @@
     <title>Portfolio feat.AIRI FUJITA</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="./JavaScript/js-header.js" defer></script>
+    <script src="./JavaScript/js-slide.js" defer></script>
 </head>
 
 <body>
     <header class="l-header js-header is-active">
         <div class="l-header__inner">
+            <button class="l-header__btn js-btn">
+                <img src="./images/output.svg" alt="">
+            </button>
             <ul class="l-header__menu">
                 <a href="index.html">
                     <li class="l-header__link u-c-bla">HOME</li>
                 </a>
                 <a href="about.html">
-                    <li class="l-header__link">ABOUT ME</li>
+                    <li class="l-header__link l-header__link--about">ABOUT ME</li>
                 </a>
                 <a href="work_list.html">
-                    <li class="l-header__link">WORKS</li>
+                    <li class="l-header__link l-header__link--work">WORKS</li>
                 </a>
                 <a href="#contact">
-                    <li class="l-header__link">CONTACT</li>
+                    <li class="l-header__link l-header__link--contact">CONTACT</li>
                 </a>
             </ul>
             <img src="./images/CD_color.PNG" alt="" class="l-header__bg">
@@ -37,28 +41,28 @@
 
         <section class="p-top-about">
             <div class="p-top-about__favorite p-player">
-                <img src="./images/baritone.JPG" alt="バリトンサックスでソロを吹く藤田愛梨" class="p-player__img">
+                <img src="./images/baritone.JPG" alt="バリトンサックスでソロを吹く藤田愛梨" class="p-player__img js-img">
                 <div class="p-player__text">
-                    <p class="p-player__title">
-                        吹奏楽withバリトンサックス
+                    <p class="p-player__title js-title">
+                        吹奏楽
                     </p>
                     <p class="p-player__tag">
-                        趣味
+                        すきなもの
                     </p>
                     <div class="p-player__bar">
-                        <span class="p-player__sec js-sec is-active"></span>
-                        <span class="p-player__sec"></span>
-                        <span class="p-player__sec"></span>
-                        <span class="p-player__sec"></span>
+                        <span class="p-player__sec js-bar is-active"></span>
+                        <span class="p-player__sec js-bar"></span>
+                        <span class="p-player__sec js-bar"></span>
+                        <span class="p-player__sec js-bar"></span>
                     </div>
                     <div class="p-player__operation">
-                        <button class="p-player__button">
+                        <button class="p-player__button js-prevBtn">
                             <img src="./images/SkipBack.png" alt="前に戻る">
                         </button>
-                        <button class="p-player__button">
-                            <img src="./images/Pause.png" alt="一時停止">
+                        <button class="p-player__button js-stopBtn">
+                            <img class="js-stopImg" src="./images/Pause.png" alt="一時停止">
                         </button>
-                        <button class="p-player__button">
+                        <button class="p-player__button js-nextBtn">
                             <img src="./images/SkipForward.png" alt="次に進む">
                         </button>
                     </div>
@@ -88,28 +92,41 @@
                 <a href="#">
                     <div class="p-top-works__item">
                         <img src="./images/images-001.jpg" alt="和菓子屋「花芽」Webサイトの外観" class="p-top-works__img">
-                        <h3 class="p-top-works__text">和菓子屋「花芽」Webサイト &gt;</h3>
+                        <h3 class="p-top-works__text">和菓子屋「花芽」Webサイト</h3>
                     </div>
                 </a>
                 <a href="#">
                     <div class="p-top-works__item">
                         <img src="./images/images-001.jpg" alt="和風カフェ「虎威殿」サイトデザインの外観" class="p-top-works__img">
-                        <h3 class="p-top-works__text">和風カフェ「虎威殿」サイトデザイン &gt;</h3>
+                        <h3 class="p-top-works__text">カフェ「虎威殿」サイトデザイン</h3>
                     </div>
                 </a>
                 <a href="#">
                     <div class="p-top-works__item">
                         <img src="./images/images-001.jpg" alt="ポートフォリオサイトの外観" class="p-top-works__img">
-                        <h3 class="p-top-works__text">ポートフォリオサイト &gt;</h3>
+                        <h3 class="p-top-works__text">ポートフォリオサイト</h3>
                     </div>
                 </a>
                 <a href="#">
                     <div class="p-top-works__item">
                         <img src="./images/images-001.jpg" alt="ポートフォリオ" class="p-top-works__img">
-                        <h3 class="p-top-works__text">Webアプリ「MoguTomo」 &gt;</h3>
+                        <h3 class="p-top-works__text">Webアプリ「MoguTomo」</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="p-top-works__item">
+                        <img src="./images/images-001.jpg" alt="ポートフォリオ" class="p-top-works__img">
+                        <h3 class="p-top-works__text">Webアプリ「MoguTomo」</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="p-top-works__item">
+                        <img src="./images/images-001.jpg" alt="ポートフォリオ" class="p-top-works__img">
+                        <h3 class="p-top-works__text">Webアプリ「MoguTomo」</h3>
                     </div>
                 </a>
             </div>
+            <a href="./work_list.html" class="p-top-works__link">全ての作品をみる&rarr;</a>
         </section>
 
         <section class="p-top-contact" id="contact">
@@ -138,20 +155,8 @@
     </main>
 
     <footer class="l-footer">
-        <ul class="l-footer__menu">
-            <a href="index.html">
-                <li class="l-footer__link u-c-bla">HOME</li>
-            </a>
-            <a href="about.html">
-                <li class="l-footer__link">ABOUT ME</li>
-            </a>
-            <a href="work_list.html">
-                <li class="l-footer__link">WORKS</li>
-            </a>
-            <a href="#contact">
-                <li class="l-footer__link">CONTACT</li>
-            </a>
-        </ul>
+        <img src="./images/CDcase.svg" alt="" class="l-footer__bg">
+    </footer>
 </body>
 
 </html>

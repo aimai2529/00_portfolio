@@ -6,13 +6,121 @@
     min-width: 400px;
     aspect-ratio: 1/1;
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
-    transform: translateX(-80%);
+    transform: translateX(-85%);
     transition: .5s;
 
+    @include m-query {
+        transform: translateX(-50%) translateY(-85%);
+        left: 50vw;
+        margin-top: 30px;
+    }
+
     &.is-active {
-        transform: translateX(0);
+        transform: translateX(-50%);
+
+        .l-header__menu {
+            display: block;
+        }
+    }
+
+    &.is-appear {
+        transform: translateX(-50%);
+
+        .l-header__menu {
+            display: block;
+        }
+    }
+
+    &.is-top {
+        max-width: 900px;
+        width: 80%;
+        min-width: 400px;
+        top: 60px;
+        left: 50vw;
+        transform: translateX(-50%);
+
+        .l-header__bg {
+            animation-play-state: running;
+        }
+    }
+
+    &.is-bottom {
+        max-width: 600px;
+        width: 60%;
+        min-width: 230px;
+        top: auto;
+        bottom: 60px;
+        left: 50vw;
+        transform: translateX(-50%);
+
+        .l-header__bg {
+            animation-play-state: paused;
+        }
+
+        .l-header__menu {
+            display: block;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        z-index: 999;
+        display: none;
+        transition: .2s;
+
+        @include m-query {
+            top: auto;
+            bottom: 10px;
+            right: 50%;
+            transform: translateX(-50%);
+            // width: 40px;
+            // height: 40px;
+            background-color: $color-bg;
+            padding: 10px;
+        }
+
+        &.is-open {
+            transform: rotate(-90deg);
+            display: block;
+
+            @include m-query {
+                transform: rotate(0deg) translateX(50%);
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: rotate(-90deg) scale(1.1);
+
+                @include m-query {
+                    transform: rotate(0deg) translateX(50%);
+                }
+            }
+        }
+
+        &.is-close {
+            transform: rotate(90deg);
+            display: block;
+
+            @include m-query {
+                transform: rotate(180deg) translateX(-50%);
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: rotate(90deg) scale(1.1);
+
+                @include m-query {
+                    transform: rotate(180deg) translateX(-50%);
+                }
+            }
+        }
     }
 
     &__inner {
@@ -45,16 +153,40 @@
         margin-top: auto;
         margin-bottom: auto;
         margin-left: auto;
+        display: none;
     }
 
     &__link {
         text-align: right;
-        background-color: $color-main-with-text;
+        background-color: $color-bg;
         padding: 5px 15px;
         margin-bottom: 10px;
         width: fit-content;
         font-size: f-rem(24);
         font-weight: bold;
+        transition: .2s;
+
+        @include m-query {
+            font-size: f-rem(18);
+            padding: 3px 10px;
+            margin-bottom: 5px;
+        }
+
+        &--home:hover {
+            color: $color-accent-d;
+        }
+
+        &--about:hover {
+            color: $color-accent-e;
+        }
+
+        &--work:hover {
+            color: $color-accent-f;
+        }
+
+        &--contact:hover {
+            color: $color-accent-g;
+        }
 
         &.u-c-bla {
             background-color: $color-text;

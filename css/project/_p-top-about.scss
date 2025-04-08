@@ -2,4 +2,73 @@
 
 .p-top-about {
     @include m-inner;
+    @include m-flex(center);
+    margin-bottom: 240px;
+
+    @include m-query {
+        flex-direction: column-reverse;
+        margin-bottom: 120px;
+    }
+
+    &:hover {
+        .p-top-about__title {
+            color: $color-accent-e;
+        }
+    }
+
+    &__favorite {
+        width: 40%;
+
+        @include m-query {
+            width: 100%;
+            padding: 0 30px;
+        }
+    }
+
+    &__intro {
+        width: 50%;
+
+        @include m-query {
+            width: 100%;
+            margin-bottom: 120px;
+        }
+    }
+
+    &__title {
+        padding-top: 1.5em;
+        padding-left: 2em;
+        background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
+        font-size: f-rem(36);
+        line-height: 1;
+        letter-spacing: 0.05em;
+        margin-bottom: 60px;
+        transition: .2s;
+    }
+
+    &__text {
+        margin-bottom: 60px;
+
+        p {
+            margin-bottom: 30px;
+            transition: .2s;
+
+            &:hover {
+                color: $color-accent-e;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        font-size: f-rem(20);
+        border-bottom: $color-text 1px solid;
+        transition: .2s;
+
+        &:hover {
+            color: $color-accent-e;
+            border-bottom: $color-accent-e 1px solid;
+        }
+    }
 }

@@ -1,0 +1,13 @@
+@use '../global' as *;
+
+.l-footer {
+
+    &__bg {
+        margin: 0 auto 60px;
+        display: block;
+        max-height: 600px;
+        width: auto;
+        height: 100vw*0.6;
+        min-height: 230px;
+    }
+}

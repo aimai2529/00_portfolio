@@ -10,11 +10,18 @@
 
     &__logo {
         position: relative;
-        z-index: 999;
+        z-index: 9999;
         margin-top: auto;
         margin-left: auto;
         padding: 20px 30px;
-        width: 60%;
-        background-color: $color-main-with-text;
+        width: 80%;
+        min-width: 500px;
+
+        @include m-query {
+            width: 100%;
+            max-width: 500px;
+            min-width: auto;
+            z-index: 99;
+        }
     }
 }

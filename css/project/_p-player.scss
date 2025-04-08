@@ -12,4 +12,37 @@
         margin: 60px auto 0;
         width: 90%;
     }
+
+    &__title {
+        font-size: f-rem(24);
+        margin-bottom: 10px;
+    }
+
+    &__bar {
+        margin: 60px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__sec {
+        display: block;
+        width: 20%;
+        height: 5px;
+        background-color: $color-main-with-bg;
+
+        &.is-active {
+            background-color: $color-text;
+        }
+    }
+
+    &__operation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

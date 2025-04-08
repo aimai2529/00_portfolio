@@ -1,0 +1,74 @@
+@use '../global' as *;
+
+.p-top-contact {
+    @include m-inner;
+    margin-bottom: 240px;
+
+    &:hover {
+        .p-top-contact__title {
+            color: $color-accent-g;
+        }
+    }
+
+    &__title {
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        padding-left: 2.5em;
+        background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
+        border: $color-bg 3px solid;
+        font-size: f-rem(36);
+        line-height: 1;
+        letter-spacing: 0.05em;
+        margin-bottom: 60px;
+        transition: .2s;
+    }
+
+    &__text {
+        margin-bottom: 60px;
+
+
+        transition: .2s;
+
+        &:hover {
+            color: $color-accent-g;
+        }
+    }
+
+    &__address {
+        @include m-flex(stretch, space-between);
+
+        @include m-query {
+            display: block;
+            padding: 0 30px;
+        }
+    }
+
+    &__email {
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+        margin-bottom: 30px;
+        font-size: f-rem(20);
+
+        @include m-query {
+            margin-bottom: 60px;
+        }
+
+        h3 {
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: block;
+            width: fit-content;
+            margin-top: auto;
+            padding: 10px 15px;
+            border: $color-main-with-bg 3px solid;
+            transition: .2s;
+
+            &:hover {
+                border: $color-accent-g 3px solid;
+            }
+        }
+    }
+}
