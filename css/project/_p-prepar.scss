@@ -1,0 +1,27 @@
+@use '../global' as *;
+
+.p-prepar {
+    @include m-inner;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    margin-bottom: 450px;
+
+    &__text {
+        position: relative;
+        z-index: 9999;
+        margin-top: auto;
+        margin-left: auto;
+        padding: 20px 30px;
+        text-align: right;
+        font-size: f-rem(36);
+
+        @include m-query {
+            width: 100%;
+            max-width: 500px;
+            min-width: auto;
+            z-index: 99;
+        }
+    }
+}

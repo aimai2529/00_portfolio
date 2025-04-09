@@ -1,4 +1,5 @@
 @use 'p-top-firstview';
+@use 'p-prepar';
 @use 'p-player';
 @use 'p-top-about';
 @use 'p-top-works';
@@ -6,3 +7,5 @@
 @use 'p-work-head';
 @use 'p-work-base';
 @use 'p-work-content';
+@use 'p-list-head';
+@use 'p-list-content';

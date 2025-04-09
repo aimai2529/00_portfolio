@@ -1,11 +1,17 @@
 const header = document.querySelector(".js-header");
 const btn = document.querySelector(".js-btn");
-const bodyHeight = document.body.clientHeight // bodyの高さを取得
-const windowHeight = window.innerHeight // windowの高さを取得
-const bottomPoint = bodyHeight - windowHeight // ページ最下部までスクロールしたかを判定するための位置を計算
+let bodyHeight;
+let windowHeight;
+let bottomPoint;
+
+window.addEventListener('load', function () {
+    bodyHeight = document.body.clientHeight; // bodyの高さを取得
+    windowHeight = window.innerHeight; // windowの高さを取得
+    bottomPoint = bodyHeight - windowHeight; // ページ最下部までスクロールしたかを判定するための位置を計算
+});
 
 window.addEventListener("scroll", () => {
-    if (this.location.pathname === '/index.html') {
+    if (this.location.pathname === '/portfolio/index.html' || this.location.pathname === '/portfolio/') {
         if (window.scrollY > 150 && header.classList.contains("is-active")) {
             header.classList.remove("is-active");
             btn.classList.add("is-close");

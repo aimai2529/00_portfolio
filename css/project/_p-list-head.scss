@@ -1,9 +1,9 @@
 @use '../global' as *;
 
-.p-work-head {
+.p-list-head {
     @include m-inner;
     margin-top: 180px;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 
     &__title {
         width: fit-content;
@@ -12,13 +12,9 @@
         margin-bottom: 15px;
         position: relative;
 
-        @include m-query {
-            line-height: 1.5;
-        }
-
         &::before {
             content: '';
-            background: $color-accent-d;
+            background: $color-accent-f;
             width: 100%;
             height: 3px;
             position: absolute;
@@ -35,19 +31,7 @@
         }
     }
 
-    &__tag {
-        margin-bottom: 60px;
-    }
-
-    &__img {
-        display: block;
-        width: 100%;
-        margin-bottom: 60px;
-    }
-
-    &__about {
-        p {
-            margin-bottom: 15px;
-        }
+    &__sub {
+        font-size: f-rem(24);
     }
 }

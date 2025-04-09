@@ -2,15 +2,36 @@
 
 .p-work-base {
     @include m-inner;
+    margin-bottom: 120px;
+
+    &:hover {
+        .p-work-base__title {
+            color: $color-accent-e;
+        }
+    }
+
+    &__content {
+        padding: 0 30px;
+    }
 
     &__title {
         font-size: f-rem(20);
         font-weight: bold;
         line-height: 1;
-        margin-bottom: 5px;
+        margin-bottom: 12px;
+        transition: .2s;
     }
 
     &__text {
-        margin-bottom: 10px;
+        margin-bottom: 24px;
+    }
+
+    a {
+        text-decoration: underline solid 1px;
+        word-break: break-all;
+
+        &:hover {
+            color: $color-accent-e;
+        }
     }
 }
