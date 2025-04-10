@@ -103,9 +103,19 @@ body {
   background-color: #0a0a0a;
   color: #f0f0f0;
   font-size: 1rem;
+  text-align: justify;
   font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
   line-height: 1.8;
+  letter-spacing: 0.005em;
   min-width: 290px;
+}
+
+::-moz-selection {
+  background-color: rgba(255, 134, 1, 0.3);
+}
+
+::selection {
+  background-color: rgba(255, 134, 1, 0.3);
 }
 
 .l-header {
@@ -567,7 +577,7 @@ body {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 10%;
   background-color: #999;
 }
 .p-top-works__item:hover {
@@ -796,7 +806,7 @@ body {
   }
 }
 .p-work-content__h2 {
-  margin-top: 60px;
+  margin-top: 120px;
   margin-bottom: 30px;
   padding-top: 1em;
   padding-bottom: 0.5em;
@@ -837,7 +847,8 @@ body {
   }
 }
 .p-work-content__img img {
-  width: 45%;
+  width: 48%;
+  margin-bottom: 15px;
 }
 @media (800px>=width) {
   .p-work-content__img img {

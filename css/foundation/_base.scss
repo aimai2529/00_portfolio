@@ -4,7 +4,13 @@ body {
     background-color: $color-bg;
     color: $color-text;
     font-size: f-rem(16);
+    text-align: justify;
     font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
     line-height: 1.8;
+    letter-spacing: 0.005em;
     min-width: 290px;
+}
+
+::selection {
+    background-color: rgba(255, 134, 1, 0.3);
 }
