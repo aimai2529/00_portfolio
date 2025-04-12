@@ -10,7 +10,7 @@ const texts = ["吹奏楽", "スキー", "遊園地", "TRPG"];
 let timer;
 
 let count = 0;
-let time = 10000;
+let time = 5000;
 
 stopBtn.addEventListener("click", () => {
     stopBtn.classList.toggle("is-stop");

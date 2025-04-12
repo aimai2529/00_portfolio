@@ -7,13 +7,6 @@
     &__h2 {
         margin-top: 120px;
         margin-bottom: 30px;
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        padding-left: 2.5em;
-        background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
-        font-size: f-rem(32);
-        line-height: 1;
-        transition: .2s;
 
         &:hover {
             color: $color-accent-f;
@@ -35,6 +28,11 @@
     &__text {
         padding: 0 30px;
         margin-bottom: 15px;
+        transition: .2s;
+
+        &:hover {
+            color: $color-accent-g;
+        }
     }
 
     &__img {

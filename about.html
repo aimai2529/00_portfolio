@@ -8,12 +8,13 @@
     <link rel="icon" href="favicon.ico">
     <!-- ファビコン -->
     <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./JavaScript/js-header.js" defer></script>
 </head>
 
 <body>
-    <header class="l-header js-header is-active">
+    <header class="l-header js-header">
         <div class="l-header__inner">
-            <button class="l-header__btn js-btn">
+            <button class="l-header__btn js-btn is-close">
                 <img src="./images/output.svg" alt="">
             </button>
             <ul class="l-header__menu">
@@ -35,12 +36,213 @@
     </header>
 
     <main class="l-main">
-        <section class="p-prepar">
-            <h1 class="p-prepar__text">
-                このページは準備中です、、、
+        <section class="p-about-head">
+            <h1 class="p-about-head__title">
+                about me
             </h1>
+            <p class="p-about-head__sub">
+                ふじたあいりのことについて
+            </p>
         </section>
 
+        <section class="p-about-base">
+            <div class="p-about-base__favorite p-player">
+                <img src="./images/baritone.JPG" alt="バリトンサックスでソロを吹く藤田愛梨" class="p-player__img js-img">
+                <div class="p-player__text">
+                    <p class="p-player__title js-title">
+                        吹奏楽
+                    </p>
+                    <p class="p-player__tag">
+                        すきなもの
+                    </p>
+                    <div class="p-player__bar">
+                        <span class="p-player__sec js-bar is-active"></span>
+                        <span class="p-player__sec js-bar"></span>
+                        <span class="p-player__sec js-bar"></span>
+                        <span class="p-player__sec js-bar"></span>
+                    </div>
+                    <div class="p-player__operation">
+                        <button class="p-player__button js-prevBtn">
+                            <img src="./images/SkipBack.png" alt="前に戻る">
+                        </button>
+                        <button class="p-player__button js-stopBtn">
+                            <img class="js-stopImg" src="./images/Pause.png" alt="一時停止">
+                        </button>
+                        <button class="p-player__button js-nextBtn">
+                            <img src="./images/SkipForward.png" alt="次に進む">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-about-base__content">
+                <h2 class="p-about-base__title">
+                    <img src="./images/sign.PNG" alt="ふじたあいり">
+                </h2>
+                <p class="p-top-about__text">AIRI Fujita</p>
+                <p class="p-about-base__text">ハンドルネーム &#0058; AIMAI</p>
+                <p class="p-about-base__text">
+                    トライデントコンピュータ専門学校Webデザイン学科 26卒
+                </p>
+                <p class="p-top-about__text">
+                    フロントエンドエンジニア志望
+                </p>
+            </div>
+        </section>
+
+        <section class="p-about-skill">
+            <h2 class="p-about-skill__title c-title">skill</h2>
+            <div class="p-about-skill__block">
+                <img src="./images/program.PNG" alt="" class="p-about-skill__img">
+                <div class="p-about-skill__content">
+                    <h3 class="p-about-skill__name">
+                        プログラミング
+                    </h3>
+                    <p class="p-work-base__text">
+                        規則性をもって見やすいコーディングを心がけています。BEM、FLOCSSの規則に則ることが多いです。CMSの導入経験もあります。
+                    </p>
+                    <p class="p-work-base__text">
+                        自信あり
+                        <br>HTML / CSS(Scss) / JavaScript
+                    </p>
+                    <p class="p-work-base__text">
+                        使用経験あり
+                        <br>WordPress / microCMS
+                    </p>
+                </div>
+            </div>
+            <div class="p-about-skill__block">
+                <img src="./images/design.PNG" alt="" class="p-about-skill__img">
+                <div class="p-about-skill__content">
+                    <h3 class="p-about-skill__name">
+                        デザイン
+                    </h3>
+                    <p class="p-work-base__text">
+                        配色や余白に気を配り、見やすいデザインになるように気をつけています。遊び心を散りばめるのが大好きです。Figmaのオートレイアウト、インタラクションなどの機能を活用しています。
+                    </p>
+                    <p class="p-work-base__text">
+                        自信あり
+                        <br>Illustrator / Photoshop /Figma
+                    </p>
+                    <p class="p-work-base__text">
+                        使用経験あり
+                        <br>Adobe XD / Affter Effect / Premia Pro
+                    </p>
+                </div>
+            </div>
+            <div class="p-about-skill__block">
+                <img src="./images/presentation.PNG" alt="" class="p-about-skill__img">
+                <div class="p-about-skill__content">
+                    <h3 class="p-about-skill__name">
+                        プレゼンテーション
+                    </h3>
+                    <p class="p-work-base__text">
+                        中高と回数を重ねることで磨いてきた、プレゼンテーションに対する度胸は人一倍持っています。人に伝わる話し方、見やすいスライドの使い方などの知識もあります。
+                    </p>
+                    <p class="p-work-base__text">
+                        自信あり
+                        <br>Google Slide / Power Point
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="p-about-history">
+            <h2 class="p-about-history__title c-title">history</h2>
+            <div class="p-about-history__block">
+                <h3 class="p-about-history__time">
+                    2004年
+                </h3>
+                <p class="p-about-history__text">
+                    愛知県にて生まれました。幼少期の好きな遊びはおままごと。何かを演じて遊ぶのが、この頃から大好きでした。
+                </p>
+            </div>
+            <div class="p-about-history__block">
+                <h3 class="p-about-history__time">
+                    〜2016年
+                </h3>
+                <p class="p-about-history__text">
+                    正直勉強が嫌いだった小学生の頃の好きな教科は音楽。部活も音楽部に入っていました。部長をやっていたりとこの頃は目立ちたがり屋でした。
+                </p>
+            </div>
+            <div class="p-about-history__block">
+                <h3 class="p-about-history__time">
+                    〜2022年
+                </h3>
+                <p class="p-about-history__text">
+                    中学受験をして入学した中高一貫校で六年間を過ごしました。自由自律を重んじる環境、個性豊かすぎる級友たちに囲まれて、今につながる人格を形成していきました。部活は吹奏楽部でバリトンサックスを吹いていたのがいちばんの青春です。
+                </p>
+                <p class="p-about-history__text">
+                    この時はまだ、将来に対して明確なビジョンが持てておらず、親からの期待と周りの受験モードに流されて大学受験を決意。数学と物理が好きだと言う理由で理系に進んでいたため、なんとなく名古屋大学工学部を第一志望としました。
+                </p>
+                <p class="p-about-history__text">
+                    高校最後の一年は心を殺した勉強漬けの一年でした。そしてなんとか第一志望に合格。ここで学んだ勉強の仕方と、深めた高校の学習は私の宝物です。
+                </p>
+            </div>
+            <div class="p-about-history__block">
+                <h3 class="p-about-history__time">
+                    〜2024年
+                </h3>
+                <p class="p-about-history__text">
+                    大学に通い始めて、なんか違う、という思いに駆られるようになりました。やりたい授業を選んで受けられると言う訳ではない、好きだった高校物理とはかけ離れたあまりにも難しい物理、思ったより自己管理ができない自分、という現状に心が削られていきました。
+                </p>
+                <p class="p-about-history__text">
+                    その一方、サークル活動は楽しくて仕方ありませんでした。吹奏楽とTRPGのサークルに参加し、特にTRPGにのめり込んでいきます。その中で、デジタルデザインの楽しさに目覚めます。自分の作ったもので人に喜んでもらえることが自分の生きがいだとも気がつきました。
+                </p>
+                <p class="p-about-history__text">
+                    ここで、Webデザイナーという夢が生まれます。大学入学と共に始めたバイトも性に合っていて、早くWebデザイナーとして働きたいという思いが強くなっていきました。それに伴い、心を削ってまで大学に通う意義を見つけられなくなっていきました。そして、大学を中退するという決断に至ったのです。
+                </p>
+            </div>
+            <div class="p-about-history__block">
+                <h3 class="p-about-history__time">
+                    〜現在
+                </h3>
+                <p class="p-about-history__text">
+                    Webデザイン、あまりにも楽しい！！！！！
+                </p>
+                <p class="p-about-history__time">
+                    大変なことはたくさんあれど、全然苦じゃありませんでした。できるようになったことが、目に見えるように増えていくのが楽しくて楽しくて。本当に楽しい毎日です。今はこの決断をして、良かったと思えています。
+                </p>
+            </div>
+        </section>
+
+        <section class="p-about-message">
+            <h2 class="p-about-message__title c-title">message</h2>
+            <p class="p-about-message__text">
+                こんにちは、お疲れ様です。藤田愛梨です。
+            </p>
+            <p class="p-about-message__text">
+                まずは、ここまでお読みいただいたことにお礼を申し上げます。ありがとうございます。
+            </p>
+            <p class="p-about-message__text">
+                色々なことに興味を持ち、楽しむことが大好きな私の趣味は、TRPG、音楽、スキー、キャンプ、ゲームなどなど多岐にわたります。未知のことに飛び込むのも楽しいので、行動力もある方だと思います。
+            </p>
+            <p class="p-about-message__text">
+                私は、人が喜ぶ姿を見ることが大好きです。
+                <br>自分が作ったものを見て、笑顔になる人がいる。これ以上の喜びはありません。
+            </p>
+            <p class="p-about-message__text">
+                この原点は、中学の頃に作った一つの動画です。私の誕生日をサプライズしてくれた時の動画を1分程度にまとめた拙い動画でしたが、いろんな人に褒めてもらえて、それが嬉しくてしょうがなかったのです。
+            </p>
+            <p class="p-about-message__text">
+                絵が上手く描ける訳ではない、それでも、自分のクリエイティブで人を喜ばせたい。それでたどり着いたのがデジタルデザイン、そしてWebデザイナーでした。
+            </p>
+            <p class="p-about-message__text">
+                「かっこいいプロフェッショナルになりたい」
+                <br>「自分の大好きを、みんなの大好きにする」
+                <br>今はこれを叶えるために、日々邁進しています。
+            </p>
+            <p class="p-about-message__text">
+                何かに精通した人って、かっこいい。幼い頃から抱えてきた思いです。そうなるまでに、たくさん努力をして、経験を積んできた、そんな人に憧れています。
+            </p>
+            <p class="p-about-message__text">
+                大好きなものを広めたい、という思いは、私にとって何よりも原動力になります。そして私は、関わったものは大抵大好きになれる自信があります。大好きに、こだわりと熱意を持ち、それを見てる人にも伝えることができる、そんなWebデザイナーになりたいです。
+            </p>
+        </section>
+
+        <footer class="l-footer">
+            <img src="./images/CDcase.svg" alt="" class="l-footer__bg">
+        </footer>
     </main>
 </body>
 

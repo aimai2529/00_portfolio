@@ -13,14 +13,8 @@
     &__title {
         padding-top: 0.5em;
         padding-bottom: 1em;
-        padding-left: 2.5em;
-        background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
-        border: $color-bg 3px solid;
         font-size: f-rem(36);
-        line-height: 1;
-        letter-spacing: 0.05em;
         margin-bottom: 60px;
-        transition: .2s;
     }
 
     &__text {
@@ -56,6 +50,10 @@
 
         h3 {
             margin-bottom: 30px;
+
+            &:hover {
+                color: $color-accent-g;
+            }
         }
 
         a {

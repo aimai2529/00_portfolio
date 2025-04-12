@@ -330,6 +330,16 @@ body {
   min-height: 230px;
 }
 
+.c-title {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 2.5em;
+  background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
+  font-size: 2rem;
+  line-height: 1;
+  transition: 0.2s;
+}
+
 .p-top-firstview {
   width: 90%;
   max-width: 1000px;
@@ -482,14 +492,10 @@ body {
   }
 }
 .p-top-about__title {
-  padding-top: 1.5em;
-  padding-left: 2em;
-  background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
-  font-size: 2.25rem;
-  line-height: 1;
-  letter-spacing: 0.05em;
   margin-bottom: 60px;
-  transition: 0.2s;
+  padding-top: 1.5em;
+  padding-bottom: 0;
+  font-size: 2.25rem;
 }
 .p-top-about__text {
   margin-bottom: 60px;
@@ -533,16 +539,8 @@ body {
   color: #43ff00;
 }
 .p-top-works__title {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-  padding-left: 2.5em;
-  background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
-  border: #0a0a0a 3px solid;
   font-size: 2.25rem;
-  line-height: 1;
-  letter-spacing: 0.05em;
   margin-bottom: 60px;
-  transition: 0.2s;
 }
 .p-top-works__list {
   display: flex;
@@ -641,14 +639,8 @@ body {
 .p-top-contact__title {
   padding-top: 0.5em;
   padding-bottom: 1em;
-  padding-left: 2.5em;
-  background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
-  border: #0a0a0a 3px solid;
   font-size: 2.25rem;
-  line-height: 1;
-  letter-spacing: 0.05em;
   margin-bottom: 60px;
-  transition: 0.2s;
 }
 .p-top-contact__text {
   margin-bottom: 60px;
@@ -683,6 +675,9 @@ body {
 }
 .p-top-contact__email h3 {
   margin-bottom: 30px;
+}
+.p-top-contact__email h3:hover {
+  color: #01ffe9;
 }
 .p-top-contact__email a {
   display: block;
@@ -808,13 +803,6 @@ body {
 .p-work-content__h2 {
   margin-top: 120px;
   margin-bottom: 30px;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-  padding-left: 2.5em;
-  background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
-  font-size: 2rem;
-  line-height: 1;
-  transition: 0.2s;
 }
 .p-work-content__h2:hover {
   color: #43ff00;
@@ -832,6 +820,10 @@ body {
 .p-work-content__text {
   padding: 0 30px;
   margin-bottom: 15px;
+  transition: 0.2s;
+}
+.p-work-content__text:hover {
+  color: #01ffe9;
 }
 .p-work-content__img {
   display: flex;
@@ -969,6 +961,62 @@ body {
 }
 .p-list-content__tag {
   margin-right: 15px;
+}
+
+.p-about-head {
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+  margin-top: 180px;
+  margin-bottom: 60px;
+}
+@media (800px>=width) {
+  .p-about-head {
+    padding-left: 0;
+  }
+}
+.p-about-head__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.25rem;
+  line-height: 1;
+  margin-bottom: 15px;
+  position: relative;
+}
+@media (800px>=width) {
+  .p-about-head__title {
+    line-height: 1.5;
+  }
+}
+.p-about-head__title::before {
+  content: "";
+  background: #FF8601;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+.p-about-head__title:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+.p-about-head__tag {
+  margin-bottom: 60px;
+}
+.p-about-head__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.p-about-head__about p {
+  margin-bottom: 15px;
 }
 
 .u-c-bla {
