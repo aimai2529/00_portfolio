@@ -1,0 +1,73 @@
+@use "../global" as *;
+
+.p-about-skill {
+    @include m-inner;
+    margin-bottom: 180px;
+
+    &__title {
+        margin-bottom: 60px;
+        padding-top: 1.5em;
+        padding-bottom: 0;
+
+        &:hover {
+            color: $color-accent-e;
+        }
+    }
+
+    &__block {
+        @include m-flex(center);
+        margin-bottom: 60px;
+
+        @include m-query {
+            display: block;
+        }
+
+        &:hover {
+            .p-about-skill__name {
+                color: $color-accent-e;
+            }
+
+            .p-about-skill__img {
+                filter: grayscale(0);
+            }
+        }
+    }
+
+    &__img {
+        width: 30%;
+        filter: grayscale(1);
+        transition: .2s;
+
+        @include m-query {
+            display: block;
+            width: 80%;
+            margin: 0 auto 30px;
+        }
+    }
+
+    &__content {
+        width: 65%;
+
+        @include m-query {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__name {
+        font-size: f-rem(24);
+        margin-bottom: 15px;
+        transition: .2s;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+        text-align: left;
+        transition: .2s;
+
+        &:hover {
+            color: $color-accent-e;
+        }
+    }
+}

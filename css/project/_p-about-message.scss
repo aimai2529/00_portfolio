@@ -1,0 +1,25 @@
+@use "../global" as *;
+
+.p-about-message {
+    @include m-inner;
+    margin-bottom: 180px;
+
+    &__title {
+        margin-bottom: 60px;
+        padding-top: 1.5em;
+        padding-bottom: 0;
+
+        &:hover {
+            color: $color-accent-e;
+        }
+    }
+
+    &__text {
+        margin-bottom: 15px;
+        transition: .2s;
+
+        &:hover {
+            color: $color-accent-e;
+        }
+    }
+}

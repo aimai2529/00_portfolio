@@ -1,0 +1,41 @@
+@use "../global" as *;
+
+.p-about-history {
+    @include m-inner;
+    margin-bottom: 180px;
+
+    &__title {
+        margin-bottom: 60px;
+        padding-top: 1.5em;
+        padding-bottom: 0;
+
+        &:hover {
+            color: $color-accent-e;
+        }
+    }
+
+    &__block {
+        margin-bottom: 45px;
+
+        &:hover {
+            .p-about-history__time {
+                color: $color-accent-e;
+            }
+        }
+    }
+
+    &__time {
+        margin-bottom: 10px;
+        font-size: f-rem(24);
+        transition: .2s;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+        transition: .2s;
+
+        &:hover {
+            color: $color-accent-e;
+        }
+    }
+}
