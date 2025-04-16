@@ -1,0 +1,39 @@
+@use '../global' as *;
+
+.p-list-sort {
+    @include m-inner;
+    margin-bottom: 90px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $color-text;
+    }
+
+    &__inner {
+        @include m-flex;
+        margin-right: -30px;
+        padding: 0 30px 5px;
+        font-size: f-rem(20);
+
+        @include m-query {
+            display: block;
+        }
+    }
+
+    &__tag {
+        margin-right: 30px;
+
+        &:hover {
+            cursor: pointer;
+            color: $color-accent-f;
+        }
+    }
+
+    .is-active {
+        color: $color-accent-f;
+        font-weight: bold;
+    }
+}

@@ -18,6 +18,10 @@
                 color: $color-accent-f;
             }
         }
+
+        &.is-none {
+            display: none;
+        }
     }
 
     &__img {
