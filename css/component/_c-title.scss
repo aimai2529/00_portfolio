@@ -6,7 +6,13 @@
     //２段目　.5emずつズレる
     padding-left: 2.5em;
     background: url(.././images/f-gosenfu.svg) no-repeat bottom left/cover;
-    font-size: f-rem(32);
+    font-size: f-rem(36);
     line-height: 1;
     transition: .2s;
+    font-family: linotype-didot-headline, "ヒラギノ角ゴ ProN",
+        "Hiragino Kaku Gothic ProN",
+        "メイリオ",
+        "Meiryo",
+        sans-serif;
+    font-weight: 400;
 }

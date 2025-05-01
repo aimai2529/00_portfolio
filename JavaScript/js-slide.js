@@ -10,10 +10,15 @@ const texts = ["吹奏楽", "スキー", "遊園地", "TRPG"];
 let timer;
 
 let count = 0;
-let time = 5000;
+let time = 3000;
 
 stopBtn.addEventListener("click", () => {
     stopBtn.classList.toggle("is-stop");
+    // bar.forEach((item) => {
+    //     item.classList.remove("is-active");
+    // });
+    bar[count].classList.toggle("is-active");
+    bar[count].classList.toggle("is-stop");
     if (stopBtn.classList.contains("is-stop")) {
         clearInterval(timer);
         stopImg.src = "./images/Play.png";
@@ -25,6 +30,9 @@ stopBtn.addEventListener("click", () => {
 );
 
 prevBtn.addEventListener("click", () => {
+    if (stopBtn.classList.contains("is-stop")) {
+        bar[count].classList.remove("is-stop");
+    }
     if (count <= 0) {
         count = images.length - 1;
     } else {
@@ -35,11 +43,21 @@ prevBtn.addEventListener("click", () => {
     bar.forEach((item) => {
         item.classList.remove("is-active");
     });
-    bar[count].classList.add("is-active");
+    clearInterval(timer);
+    if (!stopBtn.classList.contains("is-stop")) {
+        timer = setInterval(slide, time);
+        bar[count].classList.add("is-active");
+    } else {
+        bar[count].classList.add("is-stop");
+    }
+
 }
 );
 
 nextBtn.addEventListener("click", () => {
+    if (stopBtn.classList.contains("is-stop")) {
+        bar[count].classList.remove("is-stop");
+    }
     if (count >= images.length - 1) {
         count = 0;
     } else {
@@ -50,7 +68,13 @@ nextBtn.addEventListener("click", () => {
     bar.forEach((item) => {
         item.classList.remove("is-active");
     });
-    bar[count].classList.add("is-active");
+    clearInterval(timer);
+    if (!stopBtn.classList.contains("is-stop")) {
+        timer = setInterval(slide, time);
+        bar[count].classList.add("is-active");
+    } else {
+        bar[count].classList.add("is-stop");
+    }
 }
 );
 
