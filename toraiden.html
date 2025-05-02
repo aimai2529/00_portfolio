@@ -11,9 +11,16 @@
     <!-- フォント -->
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="./JavaScript/js-header.js" defer></script>
+    <script src="./JavaScript/js-modal.js" defer></script>
 </head>
 
 <body>
+    <!-- モーダル -->
+    <div class="c-modal js-modal">
+        <span class="c-modal__close js-modalClose">&times;</span>
+        <img class="c-modal__content js-modalContent" />
+    </div>
+
     <header class="l-header js-header">
         <div class="l-header__inner">
             <button class="l-header__btn js-btn is-close">
@@ -45,7 +52,7 @@
             <p class="p-work-head__tag">
                 Webデザイン
             </p>
-            <img src="./images/images-001.jpg" alt="" class="p-work-head__img">
+            <img src="./images/toraiden/thumbnail.jpg" alt="" class="p-work-head__img">
             <div class="p-work-head__about">
                 <p>架空の和風カフェ「虎威殿」のサイトデザインをしました。
                 </p>
@@ -56,7 +63,7 @@
         <div class="p-work-base">
             <dl class="p-work-base__content">
                 <dt class="p-work-base__title">制作期間</dt>
-                <dd class="p-work-base__text">2024年10月〜2024年11月</dd>
+                <dd class="p-work-base__text">2024年10月〜2024年11月(授業は週３時間)</dd>
                 <dt class="p-work-base__title">使用ツール</dt>
                 <dd class="p-work-base__text">Illustrator / Photoshop / Figma
                 </dd>
@@ -75,120 +82,66 @@
                 制作過程
             </h2>
             <h3 class="p-work-content__h3">
-                企画固め
+                提示されたお店の概要
             </h3>
             <p class="p-work-content__text">
-                ヒアリングに臨む前に、手書きでアイデアを羅列しイメージを固めています。
+                今回作成する作品の題材は、以下のように概要が決められていて、これに沿って制作を進めました。
             </p>
             <div class="p-work-content__img">
-                <img src="./images/haname/oki1.jpg" alt="">
-                <img src="./images/haname/oki3.jpg" alt="">
-                <img src="./images/haname/oki2.jpg" alt="">
-                <img src="./images/haname/oki4.jpg" alt="">
+                <img src="./images/toraiden/wafu_contentsmap_2024.jpg" alt="" class="js-modalImg">
             </div>
             <h3 class="p-work-content__h3">
-                ヒアリング
+                ワイヤーフレーム
             </h3>
             <p class="p-work-content__text">
-                対面では３回、デザインの確認はメールで行いながら制作を進めていきました。
-                <br>初回の対面ヒアリングでは、ヒアリングシートを自作し、それをもとにサイトの方向性を決めました。
+                紙面にざっくりと書きながらレイアウトを決めていきました。
+                <br>右から左へ視線が移動する縦書きがあることも考慮しながら、ページ全体の視線移動がなるべく自然になるようにと考えながら作成しました。
             </p>
-            <p class="p-work-content__text">
-                クライアントからの大きな要望として、
-                <br>・親しみやすさ、女性らしく柔らかい雰囲気にまとめる
-                <br>・黄色をメインとして、懐かしさを感じる配色にする
-                <br>・これまで使用していたロゴと、キャッチフレーズを使う
-                <br>・花芽のこだわりを知ってもらえるサイトにする
-                <br>というものがありました。
-            </p>
+            <div class="p-work-content__img">
+                <img src="./images/toraiden/wireframe.jpeg" alt="" class="js-modalImg">
+                <img src="./images/toraiden/wireframe2.jpeg" alt="" class="js-modalImg">
+            </div>
             <h3 class="p-work-content__h3">
                 デザイン
             </h3>
             <p class="p-work-content__text">
-                デザインはFigmaを用いて作成しました。
+                全体のデザインはFigmaを用いて作成しました。
             </p>
             <p class="p-work-content__text">
-                配色は、花芽で以前から使用されていたポスターの配色を参考にして決定しました。無彩色を入れないことで優しい印象にしています。コントラスト比にも配慮しています。
+                配色、フォント、デザイン全体については、デザインデータと共に提出した以下の仕様書にまとめています。
             </p>
-            <p class="p-work-content__text">
-                フォントは、表題を明朝体にして話の雰囲気を出し、本文を手書き風フォントにすることで親しみやすさ・女性らしさを出しています。
-            </p>
-            <p class="p-work-content__text">背景に和紙のようなテクスチャを入れたこと、堅苦しくならない程度に縦書きを採用することで、和の雰囲気を演出しています。</p>
             <div class="p-work-content__img">
-                <img src="./images/haname/haname_color.jpg" alt="">
-                <img src="./images/haname/haname_font.jpg" alt="">
+                <img src="./images/toraiden/25_fujita_designdoc.jpg" alt="" class="js-modalImg">
             </div>
-            <h3 class="p-work-content__h3">
-                コーディング
-            </h3>
             <p class="p-work-content__text">
-                直近で学校の授業で学んだBEMの形式で、SCSSを使用しコードを書きました。
+                写真はフォトショップで色味などを加工しています。
             </p>
             <p class="p-work-content__text">
-                microCMSを組み込んでいます。サイトの”営業日カレンダー””本日の品揃え””季節の商品”のところが更新できるようになっています。
-            </p>
-            <p class="p-work-content__text">
-                InstagramAPIを用いて、インスタグラムでの最新の投稿がお知らせとして更新されるようにしました。
-            </p>
-            <p class="p-work-content__text">
-                ※現在、Facebookのアカウントが停止しておりサイトに表示されません。
-            </p>
-            <h3 class="p-work-content__h3">
-                展示
-            </h3>
-            <p class="p-work-content__text">
-                進級制作展当日は、ポスターでのブース展示とプレゼンテーションがありました。
-            </p>
-            <p class="p-work-content__text">
-                プレゼンテーションでは、私が抱える花芽への大きな愛がなるべく伝わるように、堂々と行いました。見てくださった企業様からはたくさんお褒めの言葉をいただくことができました。
+                また、バナーや周辺マップ、予約カレンダー、Instagram投稿の背景はIllustratorで制作しました。和紙や筆の質感にこだわって作成しています。
             </p>
             <div class="p-work-content__img">
-                <img src="./images/haname/booth.JPG" alt="">
-                <img src="./images/haname/presentation.JPG" alt="">
+                <img src="./images/toraiden/bunner2@2x-8.png" alt="" class="js-modalImg">
+                <img src="./images/toraiden/bunner1@2x-8.png" alt="" class="js-modalImg">
+                <img src="./images/toraiden/map.png" alt="" class="js-modalImg">
+                <img src="./images/toraiden/cloud@2x-8.png" alt="" class="js-modalImg">
             </div>
 
             <h2 class="p-work-content__h2 c-title">
                 工夫・苦労したところ
             </h2>
             <h3 class="p-work-content__h3">
-                折りたたみメニュー
+                figmaのオートレイアウト
             </h3>
             <p class="p-work-content__text">
-                花芽のロゴが縦書きなので、綺麗に収めるためにデスクトップ版では折りたたみメニューを左端に縦で配置しています。また、メニュー開閉ボタンは、店名から花の蕾が開閉するアニメーションにしました。5枚の画像でぱらぱら漫画のように再生しています。
-            </p>
-            <div class="p-work-content__img">
-                <img src="./images/haname/menu_btn_images.png" alt="">
-            </div>
-            <h3 class="p-work-content__h3">
-                画像の切り抜き
-            </h3>
-            <p class="p-work-content__text">
-                使用する画像は、花の形に切り取られるようにコーディングしています。花の輪郭線を真っ直ぐの線にしないことで、手作り感を演出しています。
-                <br>ブラウザのウインドウ幅を変えても、切り取りの形がそれに合わせて変わるようにするのに苦労しました。
-            </p>
-            <h3 class="p-work-content__h3">
-                サイト運用のしやすさ
-            </h3>
-            <p class="p-work-content__text">
-                花芽ではオーナーが一人で店を切り盛りされており、かなり忙しくされています。また、パソコン操作が得意ではないともおっしゃっていました。
-                <br>そこで、操作が比較的簡単でわかりやすいmicroCMSを導入しました。さらに、インスタグラムを更新するだけでサイトも更新されるようにInstagramAPIも導入しています。
-            </p>
-            <h3 class="p-work-content__h3">
-                使用している画像
-            </h3>
-            <p class="p-work-content__text">
-                花芽の魅力を伝える上で、紹介する和菓子の写真は美味しそうであることが絶対条件だと考えました。
-                <br>そこで、レンタルした一眼レフカメラを使用し、自分で撮影した画像を使用しています。撮影のために、朝7時ごろからお店にお邪魔し撮影をさせていただきました。
+                この作品を通じて、初めてfigmaを本格的に使用しました。授業で軽く教えてもらったオートレイアウトの機能を使うのに、初めは戸惑いました。ですが。慣れてくると、整った余白を持たせられたり、同じパーツを使いまわして修正も簡単にできたりと、本当に便利です。
             </p>
 
             <h2 class="p-work-content__h2 c-title">
                 製作者コメント
             </h2>
             <p class="p-work-content__text">
-                花芽の和菓子はものすっっっっごくおいしくて、店主さんも良い方で、花芽は本当に大好きなお店です。サイトを作ることで、その素敵な和菓子屋を他の人に広めるお手伝いが公認ででき、楽しさとやりがいでいっぱいでした。
-                <br>このサイトを見て、和菓子食べたいな〜と思っていただけたら、この上なく嬉しいです。おすすめはあんドーナツです。
+                和風で、でも都会の中にあって…といういろいろな要素に悩まされながら制作した作品です。おなじテーマ、素材を使っても、人によって全く違うものができていて、クラスメイトからもたくさん刺激をもらえたなと思っています。
             </p>
-            <p class="p-work-content__text">2025年夏に運用開始を目標に、さらに調整をしております。</p>
         </section>
     </main>
 

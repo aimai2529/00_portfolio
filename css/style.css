@@ -354,12 +354,14 @@ body {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
 }
 .c-modal__content {
   margin: auto;
   display: block;
   max-width: 80%;
   max-height: 80%;
+  cursor: default;
 }
 .c-modal__close {
   position: absolute;
@@ -368,7 +370,6 @@ body {
   color: #f0f0f0;
   font-size: 40px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .p-top-firstview {
@@ -893,7 +894,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   margin-bottom: 15px;
   padding: 0 30px;
 }

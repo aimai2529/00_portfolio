@@ -36,7 +36,7 @@
     }
 
     &__img {
-        @include m-flex;
+        @include m-flex(center);
         margin-bottom: 15px;
         padding: 0 30px;
 
