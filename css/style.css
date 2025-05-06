@@ -491,6 +491,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.p-player__button {
+  width: 50px;
+  height: 50px;
+}
 .p-player__button:hover {
   cursor: pointer;
 }
@@ -648,6 +652,7 @@ body {
 }
 .p-top-works__item:hover .p-top-works__img {
   transform: scale(1.05);
+  filter: grayscale(0);
 }
 .p-top-works__item:hover .p-top-works__text {
   color: #43ff00;
@@ -658,6 +663,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.2s;
+  filter: grayscale(1);
 }
 .p-top-works__text {
   width: 100%;

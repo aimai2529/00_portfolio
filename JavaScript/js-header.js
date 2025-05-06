@@ -4,7 +4,7 @@ let bodyHeight;
 let windowHeight;
 let bottomPoint;
 
-window.addEventListener('load', function () {
+window.addEventListener('scroll', function () {
     bodyHeight = document.body.clientHeight; // bodyの高さを取得
     windowHeight = window.innerHeight; // windowの高さを取得
     bottomPoint = bodyHeight - windowHeight; // ページ最下部までスクロールしたかを判定するための位置を計算

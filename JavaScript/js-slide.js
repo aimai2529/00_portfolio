@@ -21,7 +21,7 @@ stopBtn.addEventListener("click", () => {
     bar[count].classList.toggle("is-stop");
     if (stopBtn.classList.contains("is-stop")) {
         clearInterval(timer);
-        stopImg.src = "./images/Play.png";
+        stopImg.src = "./images/play.svg";
     } else {
         timer = setInterval(slide, time);
         stopImg.src = "./images/Pause.png";

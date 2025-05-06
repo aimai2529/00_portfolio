@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="stop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0f0f0;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M90.88,65.12v109.76h-18.76v-109.76h18.76M106,50h-49v140h49V50h0Z"/>
+  <path class="cls-1" d="M167.88,65.12v109.76h-18.76v-109.76h18.76M183,50h-49v140h49V50h0Z"/>
+</svg>

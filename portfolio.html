@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio feat.AIRI FUJITA</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- ファビコン -->
+    <link rel="stylesheet" href="https://use.typekit.net/xtk7mwr.css">
+    <!-- フォント -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./JavaScript/js-header.js" defer></script>
+    <script src="./JavaScript/js-modal.js" defer></script>
+</head>
+
+<body>
+    <!-- モーダル -->
+    <div class="c-modal js-modal">
+        <span class="c-modal__close js-modalClose">&times;</span>
+        <img class="c-modal__content js-modalContent" />
+    </div>
+
+    <header class="l-header js-header">
+        <div class="l-header__inner">
+            <button class="l-header__btn js-btn is-close">
+                <img src="./images/output.svg" alt="">
+            </button>
+            <ul class="l-header__menu">
+                <a href="index.html">
+                    <li class="l-header__link l-header__link--home">HOME</li>
+                </a>
+                <a href="about.html">
+                    <li class="l-header__link l-header__link--about">ABOUT ME</li>
+                </a>
+                <a href="work_list.html">
+                    <li class="l-header__link l-header__link--work">WORKS</li>
+                </a>
+                <a href="index.html#contact">
+                    <li class="l-header__link l-header__link--contact">CONTACT</li>
+                </a>
+            </ul>
+            <img src="./images/CD_color.PNG" alt="" class="l-header__bg">
+        </div>
+    </header>
+
+    <main class="l-main">
+        <section class="p-work-head">
+            <h1 class="p-work-head__title">
+                ポートフォリオサイト
+            </h1>
+            <p class="p-work-head__tag">
+                Webサイト
+            </p>
+            <img src="./images/portfolio/thumbnail.jpg" alt="" class="p-work-head__img">
+            <div class="p-work-head__about">
+                <p>自身の制作してきた作品をまとめるためのサイトを制作しました。
+                </p>
+                <p>新学期が始まったすぐの集中授業にて、５日間で制作しました。AIをフル活用して、短期で制作したサイトになっています。</p>
+            </div>
+        </section>
+
+        <div class="p-work-base">
+            <dl class="p-work-base__content">
+                <dt class="p-work-base__title">制作期間</dt>
+                <dd class="p-work-base__text">2025年4月</dd>
+                <dt class="p-work-base__title">使用ツール</dt>
+                <dd class="p-work-base__text">HTML / SCSS / JavaScript / Illustrator / Photoshop / Figma / Visual Studio
+                    Code
+                </dd>
+                <dt class="p-work-base__title">担当範囲</dt>
+                <dd class="p-work-base__text">全て</dd>
+                <!-- <dt class="p-work-base__title">作品URL</dt>
+                <dd class="p-work-base__text">
+                    <a href="https://aimai-fuji.pya.jp/portfolio/"
+                        target="_blank">https://aimai-fuji.pya.jp/portfolio/</a>
+                </dd> -->
+                <dt class="p-work-base__title">GitHub</dt>
+                <dd class="p-work-base__text">
+                    <a href="https://github.com/aimai2529/00_portfolio"
+                        target="_blank">https://github.com/aimai2529/00_portfolio</a>
+                </dd>
+            </dl>
+        </div>
+
+        <section class="p-work-content">
+            <h2 class="p-work-content__h2 c-title">
+                制作過程
+            </h2>
+            <h3 class="p-work-content__h3">
+                デザイン
+            </h3>
+            <p class="p-work-content__text">
+                あらかじめ考えていた「音楽」テーマで、ざっくりとしたデザインをFigmaで制作しました。行間やフォントサイズは作りながら考えることにして、どのコンテンツをどこに配置するかだけ考えました。
+            </p>
+            <p class="p-work-content__text">
+                フォントは、トップページの表題に「Didot」、そのほかに「ヒラギノ角ゴシック」を使用しています。Didotは細い線のセリフでモダンなエレガントさが音楽記号っぽかったので採用しました。ヒラギノ角ゴシックは、親しみやすさと読みやすさ、読み込みの速さからこれを選びました。
+            </p>
+            <p class="p-work-content__text">
+                配色は、一見しただけだとモノクロの配色になっていますが、ホバーをしていくと色がついていくような仕組みになっています。明度も彩度も高いみていて明るい気持ちになれるような色を採用しています。
+            </p>
+            <div class="p-work-content__img">
+                <img src="./images/portfolio/colors.png" alt="" class="js-modalImg">
+            </div>
+            <h3 class="p-work-content__h3">
+                イラスト
+            </h3>
+            <p class="p-work-content__text">
+                自分を最大限表現するために、自分のよく描く絵柄のイラストを、CD風ヘッダーのジャケットと作品準備中の画像、自己紹介のスキル紹介で使用しています。これらはibisPaintで作成しました。
+            </p>
+            <div class="p-work-content__img">
+                <img src="./images/CD_color.PNG" alt="" class="js-modalImg">
+                <img src="./images/prepar.PNG" alt="" class="js-modalImg">
+            </div>
+            <p class="p-work-content__text">
+                ヘッダーの背景には、ヘ音記号のついた五線譜を使用しています。音に色が付いている自分の中のイメージから、五線譜に対する文字の位置によってその文字の色も変えています。
+            </p>
+            <h3 class="p-work-content__h3">
+                コーディング
+            </h3>
+            <p class="p-work-content__text">
+                今後始まるチームでの制作の時に使えたらというのと、何か新しいことを身につけたいという思いから、flocssの形式で、SCSSを使用しコードを書きました。
+            </p>
+            <p class="p-work-content__text">
+                HTML、CSSはGitHub Copilotを、JavaScriptは Chatを活用しながら、迅速にコードを書いていきました。
+            </p>
+
+            <h2 class="p-work-content__h2 c-title">
+                工夫・苦労したところ
+            </h2>
+            <h3 class="p-work-content__h3">
+                flocssでのコーディング
+            </h3>
+            <p class="p-work-content__text">
+                手探りで進めていったため、かなり時間がかかってしまいました。作り終わる頃にはこの形式にも大分慣れることができました。
+            </p>
+            <div class="p-work-content__img">
+                <img src="./images/portfolio/flocssStudy.JPG" alt="" class="js-modalImg">
+            </div>
+            <p class="p-work-content__text">
+                自分なりに書いてまとめながら要領を掴んでいる時のメモです。
+            </p>
+            <h3 class="p-work-content__h3">
+                各種アニメーション、JavaScript
+            </h3>
+            <p class="p-work-content__text">
+                フロントエンドエンジニア志望なので、少し凝ったところをポートフォリオに入れたいと考えました。
+            </p>
+            <p class="p-work-content__text">
+                特に、トップページと自己紹介ページにある音楽プレイヤー風のところで、アニメーションを止めたり自分で進めたりする機能をボタン上のバーのアニメーションと連携させるのに苦労しました。
+            </p>
+            <p class="p-work-content__text">
+                作品一覧ページのタグでのソート機能と、作品ページでの画像拡大機能はChatGPTに相談しながらコードを制作しました。
+            </p>
+
+            <h2 class="p-work-content__h2 c-title">
+                製作者コメント
+            </h2>
+            <p class="p-work-content__text">
+                短い時間の中で、よくこれが作れたなと自分の成長を感じることができました。今までの自分の作品にはない雰囲気ながら、自分らしさも出せているのではないかなと思います。満足です。
+            </p>
+        </section>
+    </main>
+
+    <footer class="l-footer">
+        <img src="./images/CDcase.svg" alt="" class="l-footer__bg">
+    </footer>
+</body>
+
+</html>

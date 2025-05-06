@@ -54,6 +54,7 @@
 
             .p-top-works__img {
                 transform: scale(1.05);
+                filter: grayscale(0);
             }
 
             .p-top-works__text {
@@ -67,6 +68,7 @@
         height: 100%;
         object-fit: cover;
         transition: .2s;
+        filter: grayscale(1);
     }
 
     &__text {
