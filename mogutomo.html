@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio feat.AIRI FUJITA|MoguTomo</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- ファビコン -->
+    <link rel="stylesheet" href="https://use.typekit.net/xtk7mwr.css">
+    <!-- フォント -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./JavaScript/js-header.js" defer></script>
+    <script src="./JavaScript/js-modal.js" defer></script>
+</head>
+
+<body>
+    <!-- モーダル -->
+    <div class="c-modal js-modal">
+        <span class="c-modal__close js-modalClose">&times;</span>
+        <img class="c-modal__content js-modalContent" />
+    </div>
+
+    <header class="l-header js-header">
+        <div class="l-header__inner">
+            <button class="l-header__btn js-btn is-close">
+                <img src="./images/output.svg" alt="">
+            </button>
+            <ul class="l-header__menu">
+                <a href="index.html">
+                    <li class="l-header__link l-header__link--home">HOME</li>
+                </a>
+                <a href="about.html">
+                    <li class="l-header__link l-header__link--about">ABOUT ME</li>
+                </a>
+                <a href="work_list.html">
+                    <li class="l-header__link l-header__link--work">WORKS</li>
+                </a>
+                <a href="index.html#contact">
+                    <li class="l-header__link l-header__link--contact">CONTACT</li>
+                </a>
+            </ul>
+            <img src="./images/CD_color.PNG" alt="" class="l-header__bg">
+        </div>
+    </header>
+
+    <main class="l-main">
+        <section class="p-work-head">
+            <h1 class="p-work-head__title">
+                Webアプリ「MoguTomo」
+            </h1>
+            <p class="p-work-head__tag">
+                Webアプリ
+            </p>
+            <img src="./images/mogutomo/thumbnail.jpg" alt="" class="p-work-head__img">
+            <div class="p-work-head__about">
+                <p>友達を誘ってご飯に行きやすくなるアプリ、「MoguTomo」の制作をしました。
+                </p>
+                <p>学校で開催された、二泊三日の短期制作合宿で作ったもので、「記録」をテーマに4人のチームで制作したものです。”初めましての人とのチーム”で”短期制作”という初めてのことの中で成長することができました。
+                </p>
+            </div>
+        </section>
+
+        <div class="p-work-base">
+            <dl class="p-work-base__content">
+                <dt class="p-work-base__title">制作期間</dt>
+                <dd class="p-work-base__text">2025年3月</dd>
+                <dt class="p-work-base__title">使用ツール</dt>
+                <dd class="p-work-base__text">HTML / SCSS / JavaScript / Figma / Visual Studio
+                    Code
+                </dd>
+                <dt class="p-work-base__title">担当範囲</dt>
+                <dd class="p-work-base__text">レイアウトデザイン、コーディング</dd>
+                <dt class="p-work-base__title">作品URL</dt>
+                <dd class="p-work-base__text">
+                    <a href="https://camp.moo.jp/2024/K/index.html" target="_blank">https://camp.moo.jp/2024/K/</a>
+                </dd>
+                <dt class="p-work-base__title">GitHub</dt>
+                <dd class="p-work-base__text">
+                    <a href="https://github.com/aimai2529/training_camp"
+                        target="_blank">https://github.com/aimai2529/training_camp</a>
+                </dd>
+            </dl>
+        </div>
+
+        <section class="p-work-content">
+            <h2 class="p-work-content__h2 c-title">
+                アプリ機能の概要
+            </h2>
+            <p class="p-work-content__text">
+                「食を通じて、友達との親睦を深める」ことのできるアプリです。
+            </p>
+            <p class="p-work-content__text">
+                自分の行ったグルメを登録し、それをフレンドと共有することができます。そして、他のフレンドが登録したグルメを見て、自分も行きたいと思う場所があれば、アプリを通じて食事に誘うことができます。
+            </p>
+            <p class="p-work-content__text">
+                また、サブ機能として、このアプリを通じてフレンドと食事に行き、記録することで、ホーム画面のキャラクターが成長していくというちょっとした楽しい機能もあります。
+            </p>
+            <h2 class="p-work-content__h2 c-title">
+                制作過程
+            </h2>
+            <h3 class="p-work-content__h3">
+                企画固め
+            </h3>
+            <p class="p-work-content__text">
+                FigmaのFigJamを使用して、どんなものを作るか話し合いを進めていきました。思いついたアイデアを出していき、その中から、<br>
+                <em class="u-f-b">「グルメを記録」</em><br>
+                <em class="u-f-b">「記録した分キャラクターが成長する」</em><br>
+                というアイデアを軸に制作していくと決めました。
+            </p>
+            <p class="p-work-content__text">
+                教師の方々に、どんなアプリなら使ってみたいと思うか、オリジナリティを感じるかを聴きながら、アイデアを形にしていきました。<br>
+                このアプリのターゲットは、<br>
+                「グルメ巡りが好きな、他人と過ごすことに楽しさを感じる大学生」<br>
+                ゴールは、<br>
+                「食べることを通じて、外部との気持ちのつながりを得る」<br>
+                「他の人との交流を深める」<br>
+                「他人に自分の好きなものをおすすめすることに利用する」<br>
+                こととして、制作を進めていきました。
+            </p>
+            <h3 class="p-work-content__h3">
+                デザイン
+            </h3>
+            <p class="p-work-content__text">
+                デザインもFigmaを用いて作成しました。
+            </p>
+            <p class="p-work-content__text">
+                私は、トップ画面と記録したものを表示するページのレイアウトを作成しました。
+            </p>
+            <p class="p-work-content__text">
+                配色は食欲が湧くオレンジを中心としています。また、フォントはキャラクターに合わせて柔らかい雰囲気にするために「Zen丸ゴシック」を使用しています。
+            </p>
+            <p class="p-work-content__text">
+                ユーザーがよく使うであろう機能にアクセスしやすいように、記録のボタンをトップに大きく配置しました。
+            </p>
+            <div class="p-work-content__img">
+                <img src="./images/mogutomo/colors.png" alt="" class="js-modalImg">
+            </div>
+            <h3 class="p-work-content__h3">
+                コーディング
+            </h3>
+            <p class="p-work-content__text">
+                二人でコーディングを進めていったので、書き方は擦り合わせながら、担当するページを分けて進めていきました。<br>
+                私の担当は、トップページとフレンドとの記録、自分の記録が見られるページでした。
+            </p>
+            <p class="p-work-content__text">デザインしてもらったものをできるだけ再現できるように気をつけました。また画面の大きさが変わっても挙動がおかしくならないように細かい最終調整もしました。
+            </p>
+
+            <h2 class="p-work-content__h2 c-title">
+                工夫・苦労したところ
+            </h2>
+            <h3 class="p-work-content__h3">
+                チーム内での制作の癖の違い
+            </h3>
+            <p class="p-work-content__text">
+                同じfigmaというツールを使っていても、その使い方が違って苦労したとともに面白かったです。<br>
+                コードを書くときも、GitHubでブランチを作って、というのを手探りでやっていったので、そこにも時間がかかってしまいました。
+            </p>
+            <h3 class="p-work-content__h3">
+                円滑なコミュニケーション
+            </h3>
+            <p class="p-work-content__text">
+                地域も違うところから集まった初めましてのチームで、コミュニケーションが上手く取れないと何もうまくいかないと考えていました。<br>
+                それを防ぐために、昼食で名古屋飯を食べにいったり、自分から進捗を細かく口に出すようにしました。
+            </p>
+            <p class="p-work-content__text">
+                結果、意見がどんどん出て、誰が何をしているかお互いに把握しながら制作を進めることができました。
+            </p>
+
+
+            <h2 class="p-work-content__h2 c-title">
+                製作者コメント
+            </h2>
+            <p class="p-work-content__text">
+                当たり前のことではありますが、学校で学んでいることがそれぞれで違って、自分の強み・弱みがさらに見えて面白かったです。リーダーとして、制作の進行は短期制作に慣れているほかのメンバーに任せてしまいましたが、仲良く円滑に進める手伝い、そして名古屋を知ってもらうことは出来たのではないかなと思います。
+            </p>
+        </section>
+    </main>
+
+    <footer class="l-footer">
+        <img src="./images/CDcase.svg" alt="" class="l-footer__bg">
+    </footer>
+</body>
+
+</html>
